@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+d:\vc++\siki\01-第一个项目\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vc++\siki\01-第一个项目\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vc++\siki\01-第一个项目\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  01第一个项目.cpp
+d:\vc++\siki\01-第一个项目\01第一个项目.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  01-第一个项目.vcxproj -> D:\VC++\SIKI\Debug\01-第一个项目.exe
+  01-第一个项目.vcxproj -> D:\VC++\SIKI\Debug\01-第一个项目.pdb (Partial PDB)
