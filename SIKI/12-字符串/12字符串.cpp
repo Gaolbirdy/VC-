@@ -1,15 +1,49 @@
-// 12å­—ç¬¦ä¸².cpp: å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
+// 12×Ö·û´®.cpp: ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
 //
 
 #include "stdafx.h"
 #include <iostream>
-//#include <string>
+#include <string>
 using namespace std;
 
 int main()
 {
 	string s = "www.sikiedu.com";
+	//char c = s[4];
+	//cout << c << endl;
+	//cout << s[5] << endl;
+	//cout << s[6] << endl;
+	////cout << s[20] << endl;
+
+	/*for (char c : s)
+	{
+		cout << c << endl;
+	}
+
+	char c = 'c';
+	cout << islower(c) << endl;
+	cout << isupper(c) << endl;
+	
+	putchar(tolower(c));
+	putchar(toupper(c));*/
+
+
+	/*cout << tolower(c) << endl;
+	cout << toupper(c) << endl;*/
+
+	/*int num;
+	cin >> num;
+	cout << num;*/
+
+	/*string name, name2, name3;
+	cin >> name;
+	cin >> name2;
+	cin >> name3;
+	cout << "ÄãÊäÈëµÄÊÇ£º" << name << ":" << name2 << ":" << name3 << endl;*/
+
+	string l;
+	getline(cin, l);
+	cout << "ÄãÊäÈëµÄÊÇ£º" << l << endl;
 
     return 0;
 }
-

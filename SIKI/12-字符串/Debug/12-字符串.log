@@ -1,8 +1,3 @@
-﻿  stdafx.cpp
-d:\vc++\siki\12-字符串\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\vc++\siki\12-字符串\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\vc++\siki\12-字符串\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  12字符串.cpp
-d:\vc++\siki\12-字符串\12字符串.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+﻿  12字符串.cpp
   12-字符串.vcxproj -> D:\VC++\SIKI\Debug\12-字符串.exe
   12-字符串.vcxproj -> D:\VC++\SIKI\Debug\12-字符串.pdb (Partial PDB)
