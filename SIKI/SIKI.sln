@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-第一个项目", "01-第一个项目\01-第一个项目.vcxproj", "{282BC885-C123-4EBD-9E71-69CFDE7B7670}"
 EndProject
@@ -27,6 +27,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10-循环语句", "10-循环语句\10-循环语句.vcxproj", "{3F81C5BF-ED9F-4278-A623-194447632C37}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11-函数", "11-函数\11-函数.vcxproj", "{6241338A-7560-4C12-9D61-13709C74B757}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12-字符串", "12-字符串\12-字符串.vcxproj", "{6D550FE6-D966-429A-BD13-AB21544C2C8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -138,6 +142,26 @@ Global
 		{3F81C5BF-ED9F-4278-A623-194447632C37}.Release|x64.Build.0 = Release|x64
 		{3F81C5BF-ED9F-4278-A623-194447632C37}.Release|x86.ActiveCfg = Release|Win32
 		{3F81C5BF-ED9F-4278-A623-194447632C37}.Release|x86.Build.0 = Release|Win32
+		{6241338A-7560-4C12-9D61-13709C74B757}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6241338A-7560-4C12-9D61-13709C74B757}.Debug|x64.ActiveCfg = Debug|x64
+		{6241338A-7560-4C12-9D61-13709C74B757}.Debug|x64.Build.0 = Debug|x64
+		{6241338A-7560-4C12-9D61-13709C74B757}.Debug|x86.ActiveCfg = Debug|Win32
+		{6241338A-7560-4C12-9D61-13709C74B757}.Debug|x86.Build.0 = Debug|Win32
+		{6241338A-7560-4C12-9D61-13709C74B757}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6241338A-7560-4C12-9D61-13709C74B757}.Release|x64.ActiveCfg = Release|x64
+		{6241338A-7560-4C12-9D61-13709C74B757}.Release|x64.Build.0 = Release|x64
+		{6241338A-7560-4C12-9D61-13709C74B757}.Release|x86.ActiveCfg = Release|Win32
+		{6241338A-7560-4C12-9D61-13709C74B757}.Release|x86.Build.0 = Release|Win32
+		{6D550FE6-D966-429A-BD13-AB21544C2C8E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6D550FE6-D966-429A-BD13-AB21544C2C8E}.Debug|x64.ActiveCfg = Debug|x64
+		{6D550FE6-D966-429A-BD13-AB21544C2C8E}.Debug|x64.Build.0 = Debug|x64
+		{6D550FE6-D966-429A-BD13-AB21544C2C8E}.Debug|x86.ActiveCfg = Debug|Win32
+		{6D550FE6-D966-429A-BD13-AB21544C2C8E}.Debug|x86.Build.0 = Debug|Win32
+		{6D550FE6-D966-429A-BD13-AB21544C2C8E}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6D550FE6-D966-429A-BD13-AB21544C2C8E}.Release|x64.ActiveCfg = Release|x64
+		{6D550FE6-D966-429A-BD13-AB21544C2C8E}.Release|x64.Build.0 = Release|x64
+		{6D550FE6-D966-429A-BD13-AB21544C2C8E}.Release|x86.ActiveCfg = Release|Win32
+		{6D550FE6-D966-429A-BD13-AB21544C2C8E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

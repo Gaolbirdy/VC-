@@ -1,11 +1,49 @@
-// 10å¾ªç¯è¯­å¥.cpp: å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
+// 10Ñ­»·Óï¾ä.cpp: ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
 //
 
 #include "stdafx.h"
-
+#include <iostream>
+using namespace std;
 
 int main()
 {
-    return 0;
+	/*int count = 0;
+	while (count < 100)
+	{
+		cout << "Éú³ÉÒ»¸öµĞÈË No." << count << endl;
+		count++;
+	}*/
+
+	/*int count = 0;
+	do
+	{
+		cout << "Éú³ÉÒ»¸öµĞÈË No." << count << endl;
+		count++;
+	} while (count < 10);
+	cout << "whileÑ­»·ÏÂÃæµÄ´úÂë" << endl;*/
+
+	for (int i = 0; i < 10; i++)
+	{
+		if (i == 5)
+		{
+			continue;
+		}
+		cout << "Éú³ÉÒ»¸öµĞÈË No." << i << endl;
+	}
+	cout << "forÑ­»·ÏÂÃæµÄ´úÂë" << endl; 
+
+	//int count = 0;
+	//while (count < 10)
+	//{
+	//	cout << "Éú³ÉÒ»¸öµĞÈË No." << count << endl;
+	//	count++;
+
+	//	//if (count == 5)
+	//	//{
+	//	//	break;	// ÓÃÀ´ÖĞ¶ÏÑ­»·
+	//	//}
+	//}
+
+	return 0;
 }
 
