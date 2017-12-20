@@ -34,5 +34,11 @@ int main()
 	cout << "Hi" << endl << endl << "popo" << endl;
 	cout << "Hi\n\ni\n\n";
 
+	int age;
+	//string age;
+	int Age;
+	int _age;
+	int age1, age2;
+
 	return 0;
 }

@@ -1,4 +1,5 @@
 ﻿  05数据类型常量和变量.cpp
-d:\vc++\siki\05-数据类型、常量和变量\05数据类型常量和变量.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  05-数据类型、常量和变量.vcxproj -> D:\VC++\SIKI\Debug\05-数据类型、常量和变量.exe
-  05-数据类型、常量和变量.vcxproj -> D:\VC++\SIKI\Debug\05-数据类型、常量和变量.pdb (Partial PDB)
+d:\vcpp\siki\05-数据类型、常量和变量\05数据类型常量和变量.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vcpp\siki\05-数据类型、常量和变量\05数据类型常量和变量.cpp(43): error C2563: 在形参表中不匹配
+d:\vcpp\siki\05-数据类型、常量和变量\05数据类型常量和变量.cpp(43): error C2568: “<<”: 无法解析函数重载
+  d:\vcpp\siki\05-数据类型、常量和变量\05数据类型常量和变量.cpp(43): note: 可能是“std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)”
