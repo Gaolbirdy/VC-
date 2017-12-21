@@ -1,0 +1,5 @@
+﻿  变量作用域.cpp
+d:\vc++\runoob\变量作用域\变量作用域.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vc++\runoob\变量作用域\变量作用域.cpp(22): warning C4101: “c”: 未引用的局部变量
+  变量作用域.vcxproj -> D:\VC++\RUNOOB\Debug\变量作用域.exe
+  变量作用域.vcxproj -> D:\VC++\RUNOOB\Debug\变量作用域.pdb (Partial PDB)
