@@ -15,12 +15,17 @@ int main()
 	//cout << s[6] << endl;
 	////cout << s[20] << endl;
 
-	/*for (char c : s)
+	for (char c : s)
 	{
 		cout << c << endl;
 	}
 
-	char c = 'c';
+	for (auto c : s)
+	{
+		cout << c << endl;
+	}
+
+	/*char c = 'c';
 	cout << islower(c) << endl;
 	cout << isupper(c) << endl;
 	

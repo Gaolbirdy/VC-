@@ -5,10 +5,24 @@
 #include <iostream>
 using namespace std;
 
-int main()
+bool RunCalculator();
+
+void main()
 {
 	cout << "计算器!" << endl;
 
+	while (true)
+	{
+		bool isContinue = RunCalculator();
+		if (!isContinue)
+		{
+			break;
+		}
+	}
+}
+
+bool RunCalculator()
+{
 	int operator1;
 
 	cout << "请输入第一个数字：";
@@ -20,8 +34,18 @@ int main()
 	cin >> operator2;
 
 	int res = operator1 + operator2;
-	cout << "两个数字的和为：" << res << endl;
-	
-	return 0;
+	cout << "和为：" << res << endl << endl;
+
+	cout << "继续计算吗？ (y/n)" << endl << endl;
+	char c;
+	cin >> c;
+	if (c == 'y')
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 

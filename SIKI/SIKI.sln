@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-第一个项目", "01-第一个项目\01-第一个项目.vcxproj", "{282BC885-C123-4EBD-9E71-69CFDE7B7670}"
 EndProject
@@ -33,6 +33,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12-字符串", "12-字符串\12-字符串.vcxproj", "{6D550FE6-D966-429A-BD13-AB21544C2C8E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13-结构体", "13-结构体\13-结构体.vcxproj", "{E9A49986-8052-47B9-82E7-1D2CD379C59A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14-猜数字", "14-猜数字\14-猜数字.vcxproj", "{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15-枚举类型", "15-枚举类型\15-枚举类型.vcxproj", "{B14E3056-C492-405B-A93E-302127F6EB2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -174,6 +178,26 @@ Global
 		{E9A49986-8052-47B9-82E7-1D2CD379C59A}.Release|x64.Build.0 = Release|x64
 		{E9A49986-8052-47B9-82E7-1D2CD379C59A}.Release|x86.ActiveCfg = Release|Win32
 		{E9A49986-8052-47B9-82E7-1D2CD379C59A}.Release|x86.Build.0 = Release|Win32
+		{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}.Debug|x64.ActiveCfg = Debug|x64
+		{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}.Debug|x64.Build.0 = Debug|x64
+		{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}.Debug|x86.Build.0 = Debug|Win32
+		{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}.Release|Any CPU.ActiveCfg = Release|Win32
+		{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}.Release|x64.ActiveCfg = Release|x64
+		{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}.Release|x64.Build.0 = Release|x64
+		{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}.Release|x86.ActiveCfg = Release|Win32
+		{EBD1E423-0DFC-4590-A9A9-FEE93C27D1ED}.Release|x86.Build.0 = Release|Win32
+		{B14E3056-C492-405B-A93E-302127F6EB2F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{B14E3056-C492-405B-A93E-302127F6EB2F}.Debug|x64.ActiveCfg = Debug|x64
+		{B14E3056-C492-405B-A93E-302127F6EB2F}.Debug|x64.Build.0 = Debug|x64
+		{B14E3056-C492-405B-A93E-302127F6EB2F}.Debug|x86.ActiveCfg = Debug|Win32
+		{B14E3056-C492-405B-A93E-302127F6EB2F}.Debug|x86.Build.0 = Debug|Win32
+		{B14E3056-C492-405B-A93E-302127F6EB2F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{B14E3056-C492-405B-A93E-302127F6EB2F}.Release|x64.ActiveCfg = Release|x64
+		{B14E3056-C492-405B-A93E-302127F6EB2F}.Release|x64.Build.0 = Release|x64
+		{B14E3056-C492-405B-A93E-302127F6EB2F}.Release|x86.ActiveCfg = Release|Win32
+		{B14E3056-C492-405B-A93E-302127F6EB2F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
