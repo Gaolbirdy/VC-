@@ -1,4 +1,5 @@
 ﻿  常量.cpp
-d:\vc++\runoob\常量\常量.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  常量.vcxproj -> D:\VC++\RUNOOB\Debug\常量.exe
-  常量.vcxproj -> D:\VC++\RUNOOB\Debug\常量.pdb (Partial PDB)
+d:\vcpp\runoob\常量\常量.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vcpp\runoob\常量\常量.cpp(40): warning C4566: 由通用字符名称“\u02C0”表示的字符不能在当前代码页(936)中表示出来
+  常量.vcxproj -> D:\VCPP\RUNOOB\Debug\常量.exe
+  常量.vcxproj -> D:\VCPP\RUNOOB\Debug\常量.pdb (Partial PDB)

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "教程", "教程\教程.vcxproj", "{0A26B8A2-3342-4454-859F-76B630A91A41}"
 EndProject
@@ -12,6 +12,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "变量作用域", "变量作用域\变量作用域.vcxproj", "{A629CCB1-0E17-4E7D-A062-ED8ECA0271EE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "常量", "常量\常量.vcxproj", "{534BACEE-5769-4EFB-A314-5FFF1C5A3257}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "修饰符类型", "修饰符类型\修饰符类型.vcxproj", "{D01D12C5-FC19-494E-AE3F-29DF8328BCC9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "存储类", "存储类\存储类.vcxproj", "{402E262C-4EFD-4E74-A608-8485D405371B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "运算符", "运算符\运算符.vcxproj", "{A67B6B1E-A2DC-4AB5-9D32-25CA6D631C3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +67,30 @@ Global
 		{534BACEE-5769-4EFB-A314-5FFF1C5A3257}.Release|x64.Build.0 = Release|x64
 		{534BACEE-5769-4EFB-A314-5FFF1C5A3257}.Release|x86.ActiveCfg = Release|Win32
 		{534BACEE-5769-4EFB-A314-5FFF1C5A3257}.Release|x86.Build.0 = Release|Win32
+		{D01D12C5-FC19-494E-AE3F-29DF8328BCC9}.Debug|x64.ActiveCfg = Debug|x64
+		{D01D12C5-FC19-494E-AE3F-29DF8328BCC9}.Debug|x64.Build.0 = Debug|x64
+		{D01D12C5-FC19-494E-AE3F-29DF8328BCC9}.Debug|x86.ActiveCfg = Debug|Win32
+		{D01D12C5-FC19-494E-AE3F-29DF8328BCC9}.Debug|x86.Build.0 = Debug|Win32
+		{D01D12C5-FC19-494E-AE3F-29DF8328BCC9}.Release|x64.ActiveCfg = Release|x64
+		{D01D12C5-FC19-494E-AE3F-29DF8328BCC9}.Release|x64.Build.0 = Release|x64
+		{D01D12C5-FC19-494E-AE3F-29DF8328BCC9}.Release|x86.ActiveCfg = Release|Win32
+		{D01D12C5-FC19-494E-AE3F-29DF8328BCC9}.Release|x86.Build.0 = Release|Win32
+		{402E262C-4EFD-4E74-A608-8485D405371B}.Debug|x64.ActiveCfg = Debug|x64
+		{402E262C-4EFD-4E74-A608-8485D405371B}.Debug|x64.Build.0 = Debug|x64
+		{402E262C-4EFD-4E74-A608-8485D405371B}.Debug|x86.ActiveCfg = Debug|Win32
+		{402E262C-4EFD-4E74-A608-8485D405371B}.Debug|x86.Build.0 = Debug|Win32
+		{402E262C-4EFD-4E74-A608-8485D405371B}.Release|x64.ActiveCfg = Release|x64
+		{402E262C-4EFD-4E74-A608-8485D405371B}.Release|x64.Build.0 = Release|x64
+		{402E262C-4EFD-4E74-A608-8485D405371B}.Release|x86.ActiveCfg = Release|Win32
+		{402E262C-4EFD-4E74-A608-8485D405371B}.Release|x86.Build.0 = Release|Win32
+		{A67B6B1E-A2DC-4AB5-9D32-25CA6D631C3E}.Debug|x64.ActiveCfg = Debug|x64
+		{A67B6B1E-A2DC-4AB5-9D32-25CA6D631C3E}.Debug|x64.Build.0 = Debug|x64
+		{A67B6B1E-A2DC-4AB5-9D32-25CA6D631C3E}.Debug|x86.ActiveCfg = Debug|Win32
+		{A67B6B1E-A2DC-4AB5-9D32-25CA6D631C3E}.Debug|x86.Build.0 = Debug|Win32
+		{A67B6B1E-A2DC-4AB5-9D32-25CA6D631C3E}.Release|x64.ActiveCfg = Release|x64
+		{A67B6B1E-A2DC-4AB5-9D32-25CA6D631C3E}.Release|x64.Build.0 = Release|x64
+		{A67B6B1E-A2DC-4AB5-9D32-25CA6D631C3E}.Release|x86.ActiveCfg = Release|Win32
+		{A67B6B1E-A2DC-4AB5-9D32-25CA6D631C3E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

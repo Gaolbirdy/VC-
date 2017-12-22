@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+d:\vcpp\runoob\修饰符类型\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vcpp\runoob\修饰符类型\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vcpp\runoob\修饰符类型\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  修饰符类型.cpp
+d:\vcpp\runoob\修饰符类型\修饰符类型.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vcpp\runoob\修饰符类型\修饰符类型.cpp(5): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+d:\vcpp\runoob\修饰符类型\修饰符类型.cpp(12): warning C4101: “z”: 未引用的局部变量
+d:\vcpp\runoob\修饰符类型\修饰符类型.cpp(11): warning C4101: “y”: 未引用的局部变量
+d:\vcpp\runoob\修饰符类型\修饰符类型.cpp(10): warning C4101: “x”: 未引用的局部变量
+  修饰符类型.vcxproj -> D:\VCPP\RUNOOB\Debug\修饰符类型.exe
+  修饰符类型.vcxproj -> D:\VCPP\RUNOOB\Debug\修饰符类型.pdb (Partial PDB)
