@@ -3,7 +3,9 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <string>
 using namespace std;
+
 
 //int main()
 //{
@@ -163,43 +165,111 @@ using namespace std;
 //
 //}
 
+//void main()
+//{
+//	int a = 21;
+//	int c;
+//
+//	c = a;
+//	cout << "Line 1 - = 运算符实例，c 的值 = " << c << endl;
+//
+//	c += a;
+//	cout << "Line 2 - += 运算符实例，c 的值 = " << c << endl;
+//
+//	c -= a;
+//	cout << "Line 3 - -= 运算符实例，c 的值 = " << c << endl;
+//
+//	c *= a;
+//	cout << "Line 4 - *= 运算符实例，c 的值 = " << c << endl;
+//
+//	c /= a;
+//	cout << "Line 5 - /= 运算符实例，c 的值 = " << c << endl;
+//
+//	c = 200;
+//	c %= a;
+//	cout << "Line 6 - %= 运算符实例，c 的值 = " << c << endl;
+//
+//	c <<= 2;
+//	cout << "Line 7 - <<= 运算符实例，c 的值 = " << c << endl;
+//
+//	c >>= 2;
+//	cout << "Line 8 - >>= 运算符实例，c 的值 = " << c << endl;
+//
+//	c &= 2;
+//	cout << "Line 9 - &= 运算符实例，c 的值 = " << c << endl;
+//
+//	c ^= 2;
+//	cout << "Line 10 - ^= 运算符实例，c 的值 = " << c << endl;
+//
+//	c |= 2;
+//	cout << "Line 11 - |= 运算符实例，c 的值 = " << c << endl;
+//
+//}
+
+//void main()
+//{
+//	cout << "Size of char ： " << sizeof(char) << endl;
+//	cout << "Size of int : " << sizeof(int) << endl;
+//	cout << "Size of short int : " << sizeof(short int) << endl;
+//	cout << "Size of long int : " << sizeof(long int) << endl;
+//	cout << "Size of float : " << sizeof(float) << endl;
+//	cout << "Size of double : " << sizeof(double) << endl;
+//	cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
+//
+//}
+
+//void main()
+//{
+//	int y = 20;
+//	int var;
+//	/*if (y < 10)
+//	{
+//		var = 30;
+//	}
+//	else
+//	{
+//		var = 40;
+//	}*/
+//	var = (y < 10) ? 30 : 40;
+//	cout << var << endl;
+//}
+
+//void main()
+//{
+//	int var, count, incr;
+//	var = (count = 19, incr = 10, count + 1 + incr);
+//	cout << "var: " << var << endl;
+//	cout << "count: " << count << endl;
+//	cout << "incr: " << incr << endl;
+//
+//	int i, j;
+//	j = 10;
+//	i = (j++, j + 100, 999 + j);
+//	cout << i << endl;
+//}
+
+struct Employee
+{
+	char first_name[16];
+	int age;
+} emp;
+
 void main()
 {
-	int a = 21;
-	int c;
+	// 访问结构的成员时使用点运算符
+	/*strcpy_s(emp.first_name, "zara");
+	cout << emp.first_name << endl;*/
 
-	c = a;
-	cout << "Line 1 - = 运算符实例，c 的值 = " << c << endl;
+	// p_emp 是一个指针，指向类型为 Employee 的对象
+	Employee *p_emp = &emp;
+	cout << "结构变量emp的地址：" << &emp << endl;
+	cout << "指针变量中存的地址：" << p_emp << endl;
 
-	c += a;
-	cout << "Line 2 - += 运算符实例，c 的值 = " << c << endl;
+	// 把值 "zara" 赋给对象 emp 的 first_name 成员
+	// 通过指针访问结构的成员时，则使用箭头运算符
+	strcpy_s(p_emp->first_name, "zara");
+	cout << emp.first_name << endl;
 
-	c -= a;
-	cout << "Line 3 - -= 运算符实例，c 的值 = " << c << endl;
-
-	c *= a;
-	cout << "Line 4 - *= 运算符实例，c 的值 = " << c << endl;
-
-	c /= a;
-	cout << "Line 5 - /= 运算符实例，c 的值 = " << c << endl;
-
-	c = 200;
-	c %= a;
-	cout << "Line 6 - %= 运算符实例，c 的值 = " << c << endl;
-
-	c <<= 2;
-	cout << "Line 7 - <<= 运算符实例，c 的值 = " << c << endl;
-
-	c >>= 2;
-	cout << "Line 8 - >>= 运算符实例，c 的值 = " << c << endl;
-
-	c &= 2;
-	cout << "Line 9 - &= 运算符实例，c 的值 = " << c << endl;
-
-	c ^= 2;
-	cout << "Line 10 - ^= 运算符实例，c 的值 = " << c << endl;
-
-	c |= 2;
-	cout << "Line 11 - |= 运算符实例，c 的值 = " << c << endl;
+	cout << *p_emp->first_name << endl;
 
 }
