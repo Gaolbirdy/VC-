@@ -1,12 +1,128 @@
-// åˆ¤æ–­.cpp: å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
+// ÅĞ¶Ï.cpp: ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
 //
 
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    return 0;
-}
+//int main()
+//{
+//	int a = 10;
+//
+//	if (a < 20)
+//	{
+//		cout << "a Ğ¡ÓÚ 20" << endl;
+//	}
+//	cout << "a µÄÖµÊÇ " << a << endl;
+//
+//    return 0;
+//}
 
+
+//void main()
+//{
+//	int a = 100;
+//	
+//	if (a < 20)
+//	{
+//		cout << "a Ğ¡ÓÚ 20" << endl;
+//	}
+//	else
+//	{
+//		cout << "a ´óÓÚµÈÓÚ 20" << endl;
+//	}
+//	cout << "a µÄÖµÊÇ " << a << endl;
+//}
+
+//void main()
+//{
+//	int a = 100;
+//
+//	if (a == 10)
+//	{
+//		cout << "a µÄÖµÊÇ 10" << endl;
+//	}
+//	else if (a == 20)
+//	{
+//		cout << "a µÄÖµÊÇ 20" << endl;
+//	}
+//	else if (a == 30)
+//	{
+//		cout << "a µÄÖµÊÇ 30" << endl;
+//	}
+//	else
+//	{
+//		cout << "Ã»ÓĞÆ¥ÅäµÄÖµ" << endl;
+//	}
+//	cout << "a µÄ×¼È·ÖµÊÇ " << a << endl;
+//}
+
+//void main()
+//{
+//	int a = 100;
+//	int b = 200;
+//
+//	if (a == 100)
+//	{
+//		if (b == 200)
+//		{
+//			cout << "a µÄÖµÊÇ 100£¬ ÇÒbµÄÖµÊÇ 200" << endl;
+//		}
+//	}
+//	cout << "a µÄ×¼È·ÖµÊÇ " << a << endl;
+//	cout << "b µÄ×¼È·ÖµÊÇ " << b << endl;
+//}
+
+//void main()
+//{
+//	char grade = 'B';
+//
+//	switch (grade)
+//	{
+//	case 'A':
+//		cout << "ºÜ°ô£¡" << endl;
+//		break;
+//	case 'B':
+//	case 'C':
+//		cout << "×öµÃºÃ£¡" << endl;
+//		break;
+//	case 'D':
+//		cout << "ÄúÍ¨¹ıÁË" << endl;
+//		break;
+//	case 'F':
+//		cout << "×îºÃÔÙÊÔÒ»ÏÂ" << endl;
+//		break;
+//	default:
+//		cout << "ÎŞĞ§µÄ³É¼¨" << endl;
+//	}
+//
+//	cout << "ÄúµÄ³É¼¨ÊÇ " << grade << endl;
+//}
+
+//void main()
+//{
+//	int a = 100;
+//	int b = 200;
+//
+//	switch (a)
+//	{
+//	case 100:
+//		cout << "ÕâÊÇÍâ²¿switchµÄÒ»²¿·Ö" << endl;
+//		switch (b)
+//		{
+//		case 200:
+//			cout << "ÕâÊÇÄÚ²¿switchµÄÒ»²¿·Ö" << endl;
+//		}
+//	}
+//	cout << "a µÄ×¼È·ÖµÊÇ " << a << endl;
+//	cout << "b µÄ×¼È·ÖµÊÇ " << b << endl;
+//
+//}
+
+void main()
+{
+	int x, y = 10;
+
+	x = (y < 10) ? 30 : 40;
+	cout << "value of x: " << x << endl;
+}
