@@ -271,5 +271,94 @@ void main()
 	cout << emp.first_name << endl;
 
 	cout << *p_emp->first_name << endl;
+	//cout << *p_emp << endl;
+	cout << p_emp->first_name << endl;
 
 }
+
+//void main()
+//{
+//	cout << int(2.2000) << endl;
+//	cout << (int)2.2000 << endl;
+//
+//
+//	double a = 21.09399;
+//	float b = 10.20;
+//	int c;
+//
+//	c = (int)a;
+//	cout << "Line 1 - Value of (int)a is :" << c << endl;
+//
+//	c = (int)b;
+//	cout << "Line 2 - Value of (int)b is :" << c << endl;
+//}
+
+//void main()
+//{
+//	/*int a = 1;
+//	cout << &a << endl;
+//	cout << *(&a) << endl;
+//	cout << *&a << endl;
+//
+//	int b = *(&a) + 2;
+//	cout << &b << endl;
+//	cout << *(&b) << endl;
+//	cout << *&b << endl;
+//
+//	int c = *(&a);
+//	c = 10;
+//	cout << &c << endl;
+//	cout << *(&c) << endl;
+//	cout << *&c << endl;
+//	cout << &a << endl;
+//	cout << *(&a) << endl;
+//	cout << *&a << endl;*/
+//
+//	int var;
+//	int *ptr;
+//	int val;
+//
+//	var = 3000;
+//
+//	// 获取var的地址，& 是一元运算符，返回操作数的内存地址
+//	ptr = &var;
+//
+//	// 获取prt的值，* 是一元运算符，返回操作数所指定地址的变量的值
+//	val = *ptr;
+//	cout << "Value of var ：" << var << endl;
+//
+//	cout << "Value of ptr ：" << ptr << endl;
+//	cout << "Value of &var ：" << &var << endl;
+//
+//	cout << "Value of val ：" << val << endl;
+//	cout << "Value of *ptr ：" << *ptr << endl;
+//
+//	int *pt2;
+//	pt2 = *(&ptr);
+//	cout << pt2 << endl;
+//	cout << *pt2 << endl;
+//	pt2 = &(*ptr);
+//	cout << pt2 << endl;
+//	cout << *pt2 << endl;
+//}
+
+//void main()
+//{
+//	int a = 20;
+//	int b = 10;
+//	int c = 15;
+//	int d = 5;
+//	int e;
+//
+//	e = (a + b) * c / d;	// (20 + 10) * 15 / 5
+//	cout << "(a + b) * c / d 的值是 " << e << endl;
+//
+//	e = ((a + b) * c) / d;	// ((20 + 10) * 15) / 5
+//	cout << "((a + b) * c) / d 的值是 " << e << endl;
+//
+//	e = (a + b) * (c / d);	// ((20 + 10) * (15 / 5)
+//	cout << "(a + b) * (c / d) 的值是 " << e << endl;
+//
+//	e = a + (b * c) / d;	// 20 + (10 * 15) / 5
+//	cout << "a + (b * c) / d 的值是 " << e << endl;
+//}
