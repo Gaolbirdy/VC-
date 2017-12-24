@@ -3,6 +3,9 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
+
 using namespace std;
 
 //int main()
@@ -305,8 +308,198 @@ using namespace std;
 //
 //}
 
+//void main()
+//{
+//	//int *p;
+//	//int *q = p;
+//
+//	int var;
+//	int *ptr;
+//	int **pptr;
+//
+//	var = 3000;
+//
+//	// 获取var的地址
+//	ptr = &var;
+//
+//	// 使用运算符&获取ptr的地址
+//	pptr = &ptr;
+//
+//	// 使用pptr获取值
+//	cout << "Value of var: " << var << endl;
+//	cout << "Value available at *ptr: " << *ptr << endl;
+//	cout << "Value available at **pptr: " << **pptr << endl << endl;
+//
+//	// 地址
+//	cout << "var的地址: " << &var << endl;
+//	cout << "ptr指向的地址: " << ptr << endl;
+//	cout << "ptr自身的地址: " << &ptr << endl;
+//	cout << "pptr指向的地址: " << pptr << endl;
+//	cout << "pptr指向的地址 (ptr) 的值里，存储的地址 (var) : " << *pptr << endl;
+//	cout << "pptr自身的地址: " << &pptr << endl;
+//}
+
+//void main()
+//{
+//
+//	int var;
+//	int *ptr;
+//	int *pptr;
+//
+//	var = 3000;
+//
+//	// 获取var的地址
+//	ptr = &var;
+//
+//	// 把ptr指向的地址赋值给pptr，两者都指向了var的地址
+//	pptr = ptr;
+//
+//	// 使用pptr获取值
+//	cout << "Value of var: " << var << endl;
+//	cout << "Value available at *ptr: " << *ptr << endl;
+//	cout << "Value available at *pptr: " << *pptr << endl << endl;
+//
+//	// 
+//	cout << "var的地址: " << &var << endl;
+//	cout << "ptr指向的地址: " << ptr << endl;
+//	cout << "ptr自身的地址: " << &ptr << endl;
+//	cout << "pptr指向的地址: " << pptr << endl;
+//	cout << "pptr指向的地址 (var) 的值: " << *pptr << endl;
+//	cout << "pptr自身的地址: " << &pptr << endl;
+//}
+
+
+//void getSeconds(unsigned long *par);
+////void getSeconds(unsigned long *);
+//
+//void main()
+//{
+//	unsigned long sec;
+//	unsigned long *q = &sec;
+//	unsigned long *p = q;
+//
+//	cout << "sec的地址: " << &sec << endl;
+//	cout << "q指向的地址: " << q << endl;
+//	cout << "p指向的地址: " << p << endl;
+//
+//	getSeconds(p);
+//
+//	// 输出实际值
+//	cout << "Number of seconds : " << sec << endl;
+//	cout << "Number of seconds : " << *q << endl;
+//	cout << "Number of seconds : " << *p << endl;
+//}
+//
+//void getSeconds(unsigned long *par)
+//{
+//	// 获取当前的秒数
+//	*par = time(NULL);
+//
+//	cout << "par指向的地址: " << par << endl;
+//
+//	return;
+//}
+
+//// 能接受指针作为参数的函数，也能接受数组作为参数
+//// 函数声明
+//double getAverage(int *, int);
+//void showPointValue(int *);
+//const int MAX = 5;
+//
+//void main()
+//{
+//	// 带有5个元素整型数组
+//	int balance[MAX] = { 1000,2,3,17,50 };
+//	double avg;
+//
+//	// 传递一个指向数组的指针作为参数
+//	avg = getAverage(balance, MAX);
+//
+//	// 输出返回值
+//	cout << "Average value is : " << avg << endl << endl;
+//
+//	showPointValue(balance);
+//
+//	int a = 99;
+//	int *p = &a;
+//	showPointValue(p);
+//}
+//
+//double getAverage(int *arr, int size)
+//{
+//	int i, sum = 0;
+//	double avg;
+//
+//	for (i = 0; i < size; i++)
+//	{
+//		sum += arr[i];
+//		//cout << &arr[i] << endl;
+//		//sum += *(arr + i);
+//	}
+//
+//	//avg = (double)sum / size;
+//	avg = double(sum) / size;
+//	//avg = double(sum / size);
+//	return avg;
+//}
+//
+//void showPointValue(int *arr)
+//{
+//	cout << arr[0] << endl;
+//	cout << arr[1] << endl;
+//	cout << arr[MAX - 1] << endl;
+//	cout << arr[MAX] << endl;
+//
+//	cout << *arr << endl;
+//	cout << *(arr + 1) << endl;
+//	cout << *(arr + MAX - 1) << endl;
+//	cout << *(arr + MAX) << endl;
+//
+//	cout << endl;
+//}
+
+//int * myFunction()
+//{
+//
+//}
+
+// 要生成和返回随机数的函数
+int * getRandom()
+{
+	static int r[10];
+
+	// 设置种子
+	srand((unsigned)time(NULL));
+	for (int i = 0; i < 10; i++)
+	{
+		r[i] = rand();
+		cout << r[i] << "  地址: " << &r[i] << endl;
+	}
+
+	return r;
+}
+
+//void testStatic()
+//{
+//	static int a = 2;
+//	a++;
+//	cout << a << endl;
+//}
+
+// 要调用上面定义函数的主函数
 void main()
 {
+	// 一个指向整数的指针
+	int *p;
 
+	p = getRandom();
+	for (int i = 0; i < 10; i++)
+	{
+		cout << "*(p + " << i << ") : ";
+		cout << *(p + i) << "  地址: " << (p + i) << endl;
+	}
 
+	//testStatic();
+	//testStatic();
+	//testStatic();
 }

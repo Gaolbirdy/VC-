@@ -1,0 +1,4 @@
+﻿  引用.cpp
+d:\vc++\runoob\引用\引用.cpp(127): warning C4172: 返回局部变量或临时变量的地址: q
+  引用.vcxproj -> D:\VC++\RUNOOB\Debug\引用.exe
+  引用.vcxproj -> D:\VC++\RUNOOB\Debug\引用.pdb (Partial PDB)
