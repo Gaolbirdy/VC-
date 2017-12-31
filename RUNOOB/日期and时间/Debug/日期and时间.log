@@ -1,9 +1,0 @@
-﻿  日期and时间.cpp
-d:\vc++\runoob\日期and时间\日期and时间.cpp(18): warning C4477: “printf”: 格式字符串“%ld”需要类型“long”的参数，但可变参数 1 拥有了类型“time_t”
-  d:\vc++\runoob\日期and时间\日期and时间.cpp(18): note: 请考虑在格式字符串中使用“%lld”
-  d:\vc++\runoob\日期and时间\日期and时间.cpp(18): note: 请考虑在格式字符串中使用“%I64d”
-d:\vc++\runoob\日期and时间\日期and时间.cpp(19): warning C4477: “printf”: 格式字符串“%ld”需要类型“long”的参数，但可变参数 1 拥有了类型“time_t”
-  d:\vc++\runoob\日期and时间\日期and时间.cpp(19): note: 请考虑在格式字符串中使用“%lld”
-  d:\vc++\runoob\日期and时间\日期and时间.cpp(19): note: 请考虑在格式字符串中使用“%I64d”
-  日期and时间.vcxproj -> D:\VC++\RUNOOB\Debug\日期and时间.exe
-  日期and时间.vcxproj -> D:\VC++\RUNOOB\Debug\日期and时间.pdb (Partial PDB)
