@@ -1,9 +1,2 @@
-﻿  stdafx.cpp
-d:\vc++\runoob\教程\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\vc++\runoob\教程\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\vc++\runoob\教程\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  教程.cpp
-d:\vc++\runoob\教程\教程.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  LINK : 没有找到 D:\VC++\RUNOOB\Debug\教程.exe 或上一个增量链接没有生成它；正在执行完全链接
-  教程.vcxproj -> D:\VC++\RUNOOB\Debug\教程.exe
+﻿  教程.vcxproj -> D:\VC++\RUNOOB\Debug\教程.exe
   教程.vcxproj -> D:\VC++\RUNOOB\Debug\教程.pdb (Partial PDB)

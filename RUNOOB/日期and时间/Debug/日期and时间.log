@@ -1,0 +1,6 @@
+﻿cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
+  日期and时间.cpp
+d:\vc++\runoob\日期and时间\日期and时间.cpp(36): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\time.h(505): note: 参见“localtime”的声明
+  日期and时间.vcxproj -> D:\VC++\RUNOOB\Debug\日期and时间.exe
+  日期and时间.vcxproj -> D:\VC++\RUNOOB\Debug\日期and时间.pdb (Partial PDB)

@@ -1,0 +1,4 @@
+﻿cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
+  基本的输入输出.cpp
+  基本的输入输出.vcxproj -> D:\VC++\RUNOOB\Debug\基本的输入输出.exe
+  基本的输入输出.vcxproj -> D:\VC++\RUNOOB\Debug\基本的输入输出.pdb (Partial PDB)
