@@ -14,11 +14,28 @@ using namespace std;
 //    return 0;
 //}
 
+//void main()
+//{
+//	char name[50];
+//	int age;
+//
+//	cout << "请输入您的名称和年龄：";
+//	cin >> name >> age;
+//	cout << "您的名称是：" << name << endl;
+//	cout << "您的年龄是：" << age << endl;
+//}
+
+
+//void main()
+//{
+//	char str[] = "Unable to read....";
+//	
+//	cerr << "Error message : " << str << endl;
+//}
+
 void main()
 {
-	char name[50];
+	char str[] = "Unable to read....";
 
-	cout << "请输入您的名称：";
-	cin >> name;
-	cout << "您的名称是：" << name << endl;
+	clog << "Erroe message : " << str << endl;
 }

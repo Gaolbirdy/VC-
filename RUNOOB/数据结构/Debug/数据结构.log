@@ -1,0 +1,7 @@
+﻿cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
+  数据结构.cpp
+d:\vc++\runoob\数据结构\数据结构.cpp(22): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+d:\vc++\runoob\数据结构\数据结构.cpp(20): warning C4101: “book2”: 未引用的局部变量
+  数据结构.vcxproj -> D:\VC++\RUNOOB\Debug\数据结构.exe
+  数据结构.vcxproj -> D:\VC++\RUNOOB\Debug\数据结构.pdb (Partial PDB)
