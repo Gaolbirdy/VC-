@@ -13,13 +13,13 @@ struct Position
 	float z;
 };
 
-struct Enemy
-{
-	string name;
-	int hp;
-	int attack;
-	Position pos;
-};
+//struct Enemy
+//{
+//	string name;
+//	int hp;
+//	int attack;
+//	Position pos;
+//};
 
 int main()
 {
