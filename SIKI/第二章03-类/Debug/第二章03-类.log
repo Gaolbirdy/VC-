@@ -1,8 +1,6 @@
-﻿  stdafx.cpp
-d:\vc++\siki\第二章03-类\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\vc++\siki\第二章03-类\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\vc++\siki\第二章03-类\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  第二章03类.cpp
+﻿  第二章03类.cpp
 d:\vc++\siki\第二章03-类\第二章03类.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  WalkEnemy.cpp
+  正在生成代码...
   第二章03-类.vcxproj -> D:\VC++\SIKI\Debug\第二章03-类.exe
   第二章03-类.vcxproj -> D:\VC++\SIKI\Debug\第二章03-类.pdb (Partial PDB)
