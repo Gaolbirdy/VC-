@@ -6,367 +6,594 @@
 
 using namespace std;
 
+//class Box
+//{
+//	public:
+//		double length;
+//		double breadth;
+//		double height;
+//		
+//		double getVolume(void)
+//		{
+//			return length * breadth * height;
+//		}
+//
+//		double getVolumeOut(void);
+//		void setLength(double len);
+//		void setBreadth(double bre);
+//		void setHeight(double hei);
+//};
+//
+//double Box::getVolumeOut(void)
+//{
+//	return length * breadth * height;
+//}
+//
+//void Box::setLength(double len)
+//{
+//	length = len;
+//}
+//
+//void Box::setBreadth(double bre)
+//{
+//	breadth = bre;
+//}
+//
+//void Box::setHeight(double hei)
+//{
+//	height = hei;
+//}
+//
+//
+////int main()
+////{
+////	Box box1;
+////	Box box2;
+////	double volume = 0.0;
+////
+////	box1.height = 5.0;
+////	box1.length = 6.0;
+////	box1.breadth = 7.0;
+////	
+////	box2.height = 10.0;
+////	box2.length = 12.0;
+////	box2.breadth = 13.0;
+////
+////	volume = box1.height * box1.length * box1.breadth;
+////	cout << "box1 的体积：" << volume << endl;
+////
+////	volume = box2.height * box2.length * box2.breadth;
+////	cout << "box2 的体积：" << volume << endl;
+////
+////	cout << box1.getVolume() << endl;
+////	cout << box2.getVolumeOut() << endl;
+////
+////	return 0;
+////}
+//
+////void main()
+////{
+////	Box box1;
+////	Box box2;
+////	double volume;
+////
+////	box1.setLength(6.0);
+////	box1.setBreadth(7.0);
+////	box1.setHeight(5.0);
+////
+////	box2.setLength(12.0);
+////	box2.setBreadth(13.0);
+////	box2.setHeight(10.0);
+////
+////	volume = box1.getVolume();
+////	cout << "Box1 的体积：" << volume << endl;
+////
+////	volume = box2.getVolume();
+////	cout << "Box2 的体积：" << volume << endl;
+////
+////}
+//
+//class Base
+//{
+//	public:
+//
+//	protected:
+//
+//	private:
+//
+//};
+//
+//class Line
+//{
+//	public:
+//		double length;
+//		
+//		void setLength(double len);
+//		double getLength(void);
+//};
+//
+//// 成员函数定义
+//double Line::getLength(void)
+//{
+//	return length;
+//}
+//
+//void Line::setLength(double len)
+//{
+//	length = len;
+//}
+//
+////void main()
+////{
+////	Line line;
+////
+////	// 设置长度
+////	line.setLength(6.0);
+////	cout << "Length of line : " << line.getLength() << endl;
+////
+////	// 不使用成员函数设置长度
+////	line.length = 10.0;
+////	cout << "Length of line : " << line.length << endl;
+////
+////}
+//
+//class NewBox
+//{
+//	private:
+//		double width;
+//
+//	public:
+//		double length;
+//
+//		void setWidth(double wid);
+//		double getWidth(void);
+//};
+//
+//double NewBox::getWidth(void)
+//{
+//	return width;
+//}
+//
+//void NewBox::setWidth(double wid)
+//{
+//	width = wid;
+//}
+//
+//class BaseBox
+//{
+//	protected:
+//		double width;
+//};
+//
+//class SmallBox :BaseBox
+//{
+//	public:
+//		void setSmallWidth(double wid);
+//		double getSmallWidth(void);
+//};
+//
+//// 子类的成员函数
+//double SmallBox::getSmallWidth(void)
+//{
+//	return width;
+//}
+//
+//void SmallBox::setSmallWidth(double wid)
+//{
+//	width = wid;
+//}
+//
+////void main()
+////{
+////	SmallBox box;
+////
+////	// 使用成员函数设置宽度
+////	box.setSmallWidth(5.0);
+////	cout << "Width of box ： " << box.getSmallWidth() << endl;
+////
+////}
+//
+//class A
+//{
+//	public:
+//		int a;
+//		
+//		A()
+//		{
+//			a = 4;
+//			a1 = 1;
+//			a2 = 2;
+//			a3 = 3;
+//		}
+//
+//		void fun()
+//		{
+//			cout << a << endl;
+//			cout << a1 << endl;
+//			cout << a2 << endl;
+//			cout << a3 << endl;
+//		}
+//
+//	public:
+//		int a1;
+//	protected:
+//		int a2;
+//	private:
+//		int a3;
+//};
+//
+//class B :public A
+//{
+//	public:
+//		int a;
+//
+//		B(int i)
+//		{
+//			A();
+//			a = i;
+//		}
+//
+//		void fun()
+//		{
+//			cout << a << endl;
+//			cout << a1 << endl;
+//			cout << a2 << endl;
+//			//cout << a3 << endl;
+//		}
+//};
+//
+////void main()
+////{
+////	B b(10);
+////	cout << b.a << endl;
+////	cout << b.a1 << endl;
+////	//cout << b.a2 << endl;
+////	//cout << b.a3 << endl;
+////
+////	b.fun();
+////}
+//
+//class C :protected A
+//{
+//	public:
+//		int a;
+//
+//		C(int i)
+//		{
+//			A();
+//			a = i;
+//		}
+//
+//		void fun()
+//		{
+//			cout << a << endl;
+//			cout << a1 << endl;
+//			cout << a2 << endl;
+//			//cout << a3 << endl;
+//		}
+//};
+//
+////void main()
+////{
+////	C c(10);
+////	cout << c.a << endl;
+////	//cout << c.a1 << endl;
+////	//cout << c.a2 << endl;
+////	//cout << c.a3 << endl;
+////
+////	c.fun();
+////}
+//
+//class D :private A
+//{
+//	public:
+//		int a;
+//
+//		D(int i)
+//		{
+//			A();
+//			a = i;
+//		}
+//
+//		void fun()
+//		{
+//			cout << a << endl;
+//			cout << a1 << endl;
+//			cout << a2 << endl;
+//			//cout << a3 << endl;
+//		}
+//};
+//
+////void main()
+////{
+////	D d(10);
+////	cout << d.a << endl;
+////	//cout << d.a1 << endl;
+////	//cout << d.a2 << endl;
+////	//cout << d.a3 << endl;
+////	
+////	d.fun();
+////}
+//
+//class NewLine
+//{
+//	public:
+//		void setLength(double len);
+//		double getLength(void);
+//		NewLine(double len, int c);	// 这是构造函数
+//		void setColor(int c);
+//		int getColor(void);
+//
+//	private:
+//		double length;
+//		int color;
+//};
+//
+//NewLine::NewLine(double len, int c) : length(len), color(c)
+//{
+//	cout << "Object is being created, length = " << len << ", color = " << color << endl;
+//	//length = len;
+//}
+//
+//void NewLine::setLength(double len)
+//{
+//	length = len;
+//}
+//
+//double NewLine::getLength(void)
+//{
+//	return length;
+//}
+//
+//void NewLine::setColor(int c)
+//{
+//	color = c;
+//}
+//
+//int NewLine::getColor(void)
+//{
+//	return color;
+//}
+//
+////void main()
+////{
+////	NewLine line(10.0, 255);
+////
+////	// 获取默认设置的长度
+////	cout << "Length of Line : " << line.getLength() << endl;
+////	cout << "Color of Line : " << line.getColor() << endl;
+////
+////	// 再次设置长度
+////	line.setLength(6.0);
+////	line.setColor(99);
+////	cout << "Length of Line : " << line.getLength() << endl;
+////	cout << "Color of Line : " << line.getColor() << endl;
+////
+////}
+//
+//class NewLine2
+//{
+//	public:
+//		void setLength(double len);
+//		double getLength(void);
+//		NewLine2();
+//		~NewLine2();
+//
+//	private:
+//		double length;
+//};
+//
+//NewLine2::NewLine2()
+//{
+//	cout << "Object is being created" << endl;
+//}
+//
+//NewLine2::~NewLine2()
+//{
+//	cout << "Object is being deleted" << endl;
+//}
+//
+//void NewLine2::setLength(double len)
+//{
+//	length = len;
+//}
+//
+//double NewLine2::getLength(void)
+//{
+//	return length;
+//}
+//
+////void main()
+////{
+////	NewLine2 line;
+////
+////	line.setLength(6.0);
+////	cout << "Length of line : " << line.getLength() << endl;
+////}
+//
+//class NewLine3
+//{
+//public:
+//	int getLength(void);
+//	NewLine3(int len);	// 简单的构造函数
+//	NewLine3(const NewLine3 &obj);	// 拷贝构造函数
+//	~NewLine3();
+//
+//private:
+//	int *ptr;
+//};
+//
+//NewLine3::NewLine3(int len)
+//{
+//	cout << "调用构造函数" << endl;
+//
+//	// 为指针分配内存
+//	ptr = new int;
+//	*ptr = len;
+//}
+//
+//NewLine3::NewLine3(const NewLine3 &obj)
+//{
+//	cout << "调用拷贝构造函数并为指针 ptr 分配内存" << endl;
+//	ptr = new int;
+//	*ptr = *(obj.ptr);	//拷贝值
+//}
+//
+//NewLine3::~NewLine3()
+//{
+//	cout << "释放内存" << endl;
+//	delete ptr;
+//}
+//
+//int NewLine3::getLength(void)
+//{
+//	return *ptr;
+//}
+//
+//void display(NewLine3 obj)
+//{
+//	cout << "line 大小 : " << obj.getLength() << endl;
+//}
+//
+////void main()
+////{
+////	NewLine3 line1(10);
+////
+////	NewLine3 line2 = line1;
+////	NewLine3 line3(line1);
+////	NewLine3 line4(line2);
+////
+////	cout << "调用display()了" << endl;
+////	display(line1);
+////	display(line2);
+////	display(line3);
+////	display(line4);
+////}
+//
+//
+//
+//class NewBox2
+//{
+//	double width;
+//
+//	public:
+//		friend void printWidth(NewBox2 box);
+//		void setWidth(double wid);
+//
+//		friend class friendClass;
+//};
+//
+//void NewBox2::setWidth(double wid)
+//{
+//	width = wid;
+//}
+//
+//// printWidth() 不是任何类的成员函数
+//void printWidth(NewBox2 box)
+//{
+//	// 因为 printWidth() 是 Box 的友元，它可以直接访问该类的任何成员
+//	cout << "Width of box : " << box.width << endl;
+//}
+//
+//class friendClass
+//{
+//public:
+//	void getOtherWidth(NewBox2 box)
+//	{
+//		cout << box.width << endl;
+//	}
+//};
+//
+////void main()
+////{
+////	NewBox2 box;
+////
+////	// 使用成员函数设置宽度
+////	box.setWidth(10.0);
+////
+////	// 使用友元函数输出宽度
+////	printWidth(box);
+////
+////	friendClass f;
+////	f.getOtherWidth(box);
+////}
+//
+//
+//inline int Max(int x, int y)
+//{
+//	return (x > y) ? x : y;
+//}
+//
+////void main()
+////{
+////	cout << "Max(20,10): " << Max(20, 10) << endl;
+////	cout << "Max(0,200): " << Max(0, 200) << endl;
+////	cout << "Max(100,1010): " << Max(100, 1010) << endl;
+////}
+
 class Box
 {
 	public:
-		double length;
-		double breadth;
-		double height;
-		
-		double getVolume(void)
+		static int objectCount;
+
+		Box(double l = 2.0, double b = 2.0, double h = 2.0)
+		{
+			cout << "Constructor called." << endl;
+			length = l;
+			breadth = b;
+			height = h;
+			// 每次创建对象时增加1
+			objectCount++;
+		}
+
+		double Volume()
 		{
 			return length * breadth * height;
 		}
 
-		double getVolumeOut(void);
-		void setLength(double len);
-		void setBreadth(double bre);
-		void setHeight(double hei);
-};
-
-double Box::getVolumeOut(void)
-{
-	return length * breadth * height;
-}
-
-void Box::setLength(double len)
-{
-	length = len;
-}
-
-void Box::setBreadth(double bre)
-{
-	breadth = bre;
-}
-
-void Box::setHeight(double hei)
-{
-	height = hei;
-}
-
-
-//int main()
-//{
-//	Box box1;
-//	Box box2;
-//	double volume = 0.0;
-//
-//	box1.height = 5.0;
-//	box1.length = 6.0;
-//	box1.breadth = 7.0;
-//	
-//	box2.height = 10.0;
-//	box2.length = 12.0;
-//	box2.breadth = 13.0;
-//
-//	volume = box1.height * box1.length * box1.breadth;
-//	cout << "box1 的体积：" << volume << endl;
-//
-//	volume = box2.height * box2.length * box2.breadth;
-//	cout << "box2 的体积：" << volume << endl;
-//
-//	cout << box1.getVolume() << endl;
-//	cout << box2.getVolumeOut() << endl;
-//
-//	return 0;
-//}
-
-//void main()
-//{
-//	Box box1;
-//	Box box2;
-//	double volume;
-//
-//	box1.setLength(6.0);
-//	box1.setBreadth(7.0);
-//	box1.setHeight(5.0);
-//
-//	box2.setLength(12.0);
-//	box2.setBreadth(13.0);
-//	box2.setHeight(10.0);
-//
-//	volume = box1.getVolume();
-//	cout << "Box1 的体积：" << volume << endl;
-//
-//	volume = box2.getVolume();
-//	cout << "Box2 的体积：" << volume << endl;
-//
-//}
-
-class Base
-{
-	public:
-
-	protected:
-
-	private:
-
-};
-
-class Line
-{
-	public:
-		double length;
-		
-		void setLength(double len);
-		double getLength(void);
-};
-
-// 成员函数定义
-double Line::getLength(void)
-{
-	return length;
-}
-
-void Line::setLength(double len)
-{
-	length = len;
-}
-
-//void main()
-//{
-//	Line line;
-//
-//	// 设置长度
-//	line.setLength(6.0);
-//	cout << "Length of line : " << line.getLength() << endl;
-//
-//	// 不使用成员函数设置长度
-//	line.length = 10.0;
-//	cout << "Length of line : " << line.length << endl;
-//
-//}
-
-class NewBox
-{
-	private:
-		double width;
-
-	public:
-		double length;
-
-		void setWidth(double wid);
-		double getWidth(void);
-};
-
-double NewBox::getWidth(void)
-{
-	return width;
-}
-
-void NewBox::setWidth(double wid)
-{
-	width = wid;
-}
-
-class BaseBox
-{
-	protected:
-		double width;
-};
-
-class SmallBox :BaseBox
-{
-	public:
-		void setSmallWidth(double wid);
-		double getSmallWidth(void);
-};
-
-// 子类的成员函数
-double SmallBox::getSmallWidth(void)
-{
-	return width;
-}
-
-void SmallBox::setSmallWidth(double wid)
-{
-	width = wid;
-}
-
-//void main()
-//{
-//	SmallBox box;
-//
-//	// 使用成员函数设置宽度
-//	box.setSmallWidth(5.0);
-//	cout << "Width of box ： " << box.getSmallWidth() << endl;
-//
-//}
-
-class A
-{
-	public:
-		int a;
-		
-		A()
+		int compare(Box box)
 		{
-			a = 4;
-			a1 = 1;
-			a2 = 2;
-			a3 = 3;
+			return this->Volume()> box.Volume();
+			//return Volume() > box.Volume();
 		}
-
-		void fun()
-		{
-			cout << a << endl;
-			cout << a1 << endl;
-			cout << a2 << endl;
-			cout << a3 << endl;
-		}
-
-	public:
-		int a1;
-	protected:
-		int a2;
-	private:
-		int a3;
-};
-
-class B :public A
-{
-	public:
-		int a;
-
-		B(int i)
-		{
-			A();
-			a = i;
-		}
-
-		void fun()
-		{
-			cout << a << endl;
-			cout << a1 << endl;
-			cout << a2 << endl;
-			//cout << a3 << endl;
-		}
-};
-
-//void main()
-//{
-//	B b(10);
-//	cout << b.a << endl;
-//	cout << b.a1 << endl;
-//	//cout << b.a2 << endl;
-//	//cout << b.a3 << endl;
-//
-//	b.fun();
-//}
-
-class C :protected A
-{
-	public:
-		int a;
-
-		C(int i)
-		{
-			A();
-			a = i;
-		}
-
-		void fun()
-		{
-			cout << a << endl;
-			cout << a1 << endl;
-			cout << a2 << endl;
-			//cout << a3 << endl;
-		}
-};
-
-//void main()
-//{
-//	C c(10);
-//	cout << c.a << endl;
-//	//cout << c.a1 << endl;
-//	//cout << c.a2 << endl;
-//	//cout << c.a3 << endl;
-//
-//	c.fun();
-//}
-
-class D :private A
-{
-	public:
-		int a;
-
-		D(int i)
-		{
-			A();
-			a = i;
-		}
-
-		void fun()
-		{
-			cout << a << endl;
-			cout << a1 << endl;
-			cout << a2 << endl;
-			//cout << a3 << endl;
-		}
-};
-
-//void main()
-//{
-//	D d(10);
-//	cout << d.a << endl;
-//	//cout << d.a1 << endl;
-//	//cout << d.a2 << endl;
-//	//cout << d.a3 << endl;
-//	
-//	d.fun();
-//}
-
-class NewLine
-{
-	public:
-		void setLength(double len);
-		double getLength(void);
-		NewLine(double len, int c);	// 这是构造函数
-		void setColor(int c);
-		int getColor(void);
 
 	private:
 		double length;
-		int color;
+		double breadth;
+		double height;
 };
 
-NewLine::NewLine(double len, int c) : length(len), color(c)
-{
-	cout << "Object is being created, length = " << len << ", color = " << color << endl;
-	//length = len;
-}
-
-void NewLine::setLength(double len)
-{
-	length = len;
-}
-
-double NewLine::getLength(void)
-{
-	return length;
-}
-
-void NewLine::setColor(int c)
-{
-	color = c;
-}
-
-int NewLine::getColor(void)
-{
-	return color;
-}
+// 初始化类 Box 的静态成员
+int Box::objectCount = 0;
 
 void main()
 {
-	NewLine line(10.0, 255);
+	// 输出对象的总数
+	cout << "Total objects: " << Box::objectCount << endl;
+	
+	Box box1(3.3, 1.2, 1.5);
+	Box box2(8.5, 6.0, 2.0);
+	Box *ptrBox;
 
-	// 获取默认设置的长度
-	cout << "Length of Line : " << line.getLength() << endl;
-	cout << "Color of Line : " << line.getColor() << endl;
+	//if (box1.compare(box2))
+	//{
+	//	cout << "Box2 is smaller than box1" << endl;
+	//}
+	//else
+	//{
+	//	cout << "Box2 is equal to or larger than box1" << endl;
+	//}
 
-	// 再次设置长度
-	line.setLength(6.0);
-	line.setColor(99);
-	cout << "Length of Line : " << line.getLength() << endl;
-	cout << "Color of Line : " << line.getColor() << endl;
+	//// 保存第一个对象的地址
+	//ptrBox = &box1;
+	//cout << "Volume of box1: " << ptrBox->Volume() << endl;
+
+	//// 保存第一二对象的地址
+	//ptrBox = &box2;
+
+	//// 现在尝试使用成员访问运算符来访问成员
+	//cout << "Volume of box2: " << ptrBox->Volume() << endl;
+
+	cout << "Total objects: " << Box::objectCount << endl;
 
 }
