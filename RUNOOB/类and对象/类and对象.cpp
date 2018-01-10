@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -531,69 +532,163 @@ using namespace std;
 ////	cout << "Max(100,1010): " << Max(100, 1010) << endl;
 ////}
 
-class Box
-{
-	public:
-		static int objectCount;
+//class Box
+//{
+//	public:
+//		static int objectCount;
+//
+//		Box(double l = 2.0, double b = 2.0, double h = 2.0)
+//		{
+//			cout << "Constructor called." << endl;
+//			length = l;
+//			breadth = b;
+//			height = h;
+//			// 每次创建对象时增加1
+//			objectCount++;
+//		}
+//
+//		double Volume()
+//		{
+//			return length * breadth * height;
+//		}
+//
+//		int compare(Box box)
+//		{
+//			return this->Volume()> box.Volume();
+//			//return Volume() > box.Volume();
+//		}
+//
+//		static int getCount()
+//		{
+//			return objectCount;
+//		}
+//
+//	private:
+//		double length;
+//		double breadth;
+//		double height;
+//};
+//
+//// 初始化类 Box 的静态成员
+//int Box::objectCount = 0;
 
-		Box(double l = 2.0, double b = 2.0, double h = 2.0)
-		{
-			cout << "Constructor called." << endl;
-			length = l;
-			breadth = b;
-			height = h;
-			// 每次创建对象时增加1
-			objectCount++;
-		}
+//void main()
+//{
+//	// 在创建对象之前输出对象的总数
+//	cout << "Inital Stage Count: " << Box::getCount() << endl;
+//	
+//	Box box1(3.3, 1.2, 1.5);
+//	Box box2(8.5, 6.0, 2.0);
+//	Box *ptrBox;
+//
+//	//if (box1.compare(box2))
+//	//{
+//	//	cout << "Box2 is smaller than box1" << endl;
+//	//}
+//	//else
+//	//{
+//	//	cout << "Box2 is equal to or larger than box1" << endl;
+//	//}
+//
+//	//// 保存第一个对象的地址
+//	//ptrBox = &box1;
+//	//cout << "Volume of box1: " << ptrBox->Volume() << endl;
+//
+//	//// 保存第一二对象的地址
+//	//ptrBox = &box2;
+//
+//	//// 现在尝试使用成员访问运算符来访问成员
+//	//cout << "Volume of box2: " << ptrBox->Volume() << endl;
+//
+//	cout << "Final Stage Count: " << Box::getCount() << endl;
+//
+//}
 
-		double Volume()
-		{
-			return length * breadth * height;
-		}
+//// 基类
+//class Shape
+//{
+//	public:
+//		void setWidth(int w)
+//		{
+//			width = w;
+//		}
+//
+//		void setHeight(int h)
+//		{
+//			height = h;
+//		}
+//
+//	protected:
+//		int width;
+//		int height;
+//};
+//
+//// 基类 PaintCost
+//class PaintCost
+//{
+//	public:
+//		int getCost(int area)
+//		{
+//			return area * 70;
+//		}
+//};
+//
+//// 派生类
+//class Rectangle : public Shape, public PaintCost
+//{
+//	public:
+//		int getArea()
+//		{
+//			return (width * height);
+//		}
+//};
 
-		int compare(Box box)
-		{
-			return this->Volume()> box.Volume();
-			//return Volume() > box.Volume();
-		}
+//void main()
+//{
+//	Rectangle rect;
+//	int area;
+//
+//	rect.setWidth(5);
+//	rect.setHeight(7);
+//
+//	area = rect.getArea();
+//
+//	cout << "Total Area: " << rect.getArea() << endl;
+//
+//	cout << "Total paint cost: $" << rect.getCost(area) << endl;
+//}
 
-	private:
-		double length;
-		double breadth;
-		double height;
-};
+//class printData
+//{
+//	public:
+//		void print(int i)
+//		{
+//			cout << "整数为: " << i << endl;
+//		}
+//
+//		void print(double f)
+//		{
+//			cout << "浮点数为: " << f << endl;
+//		}
+//
+//		void print(string s)
+//		{
+//			cout << "字符串为: " << s << endl;
+//		}
+//
+//		void print(char c)
+//		{
+//			cout << "字符为: " << c << endl;
+//		}
+//};
+//
+//void main()
+//{
+//	printData pd;
+//
+//	pd.print(5);
+//	pd.print(500.263);
+//	pd.print("Hello C++");
+//	pd.print('c');
+//}
 
-// 初始化类 Box 的静态成员
-int Box::objectCount = 0;
-
-void main()
-{
-	// 输出对象的总数
-	cout << "Total objects: " << Box::objectCount << endl;
-	
-	Box box1(3.3, 1.2, 1.5);
-	Box box2(8.5, 6.0, 2.0);
-	Box *ptrBox;
-
-	//if (box1.compare(box2))
-	//{
-	//	cout << "Box2 is smaller than box1" << endl;
-	//}
-	//else
-	//{
-	//	cout << "Box2 is equal to or larger than box1" << endl;
-	//}
-
-	//// 保存第一个对象的地址
-	//ptrBox = &box1;
-	//cout << "Volume of box1: " << ptrBox->Volume() << endl;
-
-	//// 保存第一二对象的地址
-	//ptrBox = &box2;
-
-	//// 现在尝试使用成员访问运算符来访问成员
-	//cout << "Volume of box2: " << ptrBox->Volume() << endl;
-
-	cout << "Total objects: " << Box::objectCount << endl;
-
-}
