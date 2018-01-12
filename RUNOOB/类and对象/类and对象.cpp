@@ -692,3 +692,214 @@ using namespace std;
 //	pd.print('c');
 //}
 
+//class Box
+//{
+//	public:
+//		double getVolume(void)
+//		{
+//			return length * breadth * height;
+//		}
+//
+//		void setLength(double len)
+//		{
+//			length = len;
+//		}
+//
+//		void setBreadth(double bre)
+//		{
+//			breadth = bre;
+//		}
+//
+//		void setHeight(double hei)
+//		{
+//			height = hei;
+//		}
+//
+//		// 重载 + 运算符，用于把两个Box对象相加
+//		Box operator+(const Box& b)
+//		{
+//			Box box;
+//			box.length = this->length + b.length;
+//			box.breadth = this->breadth + b.breadth;
+//			box.height = this->height + b.height;
+//			return box;
+//		}
+//
+//		double getHeight(void)
+//		{
+//			return height;
+//		}
+//
+//	private:
+//		double length;
+//		double breadth;
+//		double height;
+//};
+//
+//void main()
+//{
+//	Box box1;
+//	Box box2;
+//	Box box3;
+//	double volume = 0.0;
+//
+//	box1.setLength(6.0);
+//	box1.setBreadth(7.0);
+//	box1.setHeight(5.0);
+//
+//	box2.setLength(12.0);
+//	box2.setBreadth(13.0);
+//	box2.setHeight(10.0);
+//
+//	volume = box1.getVolume();
+//	cout << "Volume of box1: " << volume << endl;
+//
+//	volume = box2.getVolume();
+//	cout << "Volume of box2: " << volume << endl;
+//
+//	box3 = box1 + box2;
+//	volume = box3.getVolume();
+//	cout << "Volume of box3: " << volume << endl;
+//}
+
+//class Distance
+//{
+//	private:
+//		int feet;
+//		int inches;
+//	public:
+//		Distance()
+//		{
+//			feet = 0;
+//			inches = 0;
+//		}
+//		Distance(int f, int i)
+//		{
+//			feet = f;
+//			inches = i;
+//		}
+//
+//		void displayDistance()
+//		{
+//			cout << "F: " << feet << " I: " << inches << endl;
+//		}
+//
+//		Distance operator-()
+//		{
+//			feet = -feet;
+//			inches = -inches;
+//			return Distance(-feet, -inches);
+//		}
+//};
+//
+//void main()
+//{
+//	Distance d1(11, 10), d2(-5, 11);
+//
+//	-d1;
+//	d1.displayDistance();
+//
+//	-d2;
+//	d2.displayDistance();
+//}
+
+//class Distance
+//{
+//	private:
+//		int feet;
+//		int inches;
+//
+//	public:
+//		Distance()
+//		{
+//			feet = 0;
+//			inches = 0;
+//		}
+//		Distance(int f, int i)
+//		{
+//			feet = f;
+//			inches = i;
+//		}
+//
+//		void displayDistance()
+//		{
+//			cout << "F: " << feet << " I: " << inches << endl;
+//		}
+//
+//		Distance operator-()
+//		{
+//			feet = -feet;
+//			inches = -inches;
+//			return Distance(feet, inches);
+//		}
+//
+//		bool operator<(const Distance& d)
+//		{
+//			if (feet < d.feet)
+//			{
+//				return true;
+//			}
+//			if (feet == d.feet && inches < d.inches)
+//			{
+//				return true;
+//			}
+//			return false;
+//		}
+//};
+//
+//
+//void main()
+//{
+//	Distance d1(11, 10), d2(5, 11);
+//
+//	if (d1 < d2)
+//	{
+//		cout << "d1 is less than d2" << endl;
+//	}
+//	else
+//	{
+//		cout << "d2 is less than d1" << endl;
+//	}
+//}
+
+class Distance
+{
+	private:
+		int feet;
+		int inches;
+
+	public:
+		Distance()
+		{
+			feet = 0;
+			inches = 0;
+		}
+		Distance(int f, int i)
+		{
+			feet = f;
+			inches = i;
+		}
+		
+		friend ostream &operator<<(ostream &output, const Distance& d)
+		{
+			output << "F: " << d.feet << " I: " << d.inches;
+			return output;
+		}
+
+		friend istream &operator>>(istream &input, Distance& d)
+		{
+			input >> d.feet >> d.inches;
+			return input;
+		}
+};
+
+void main()
+{
+	Distance d1(11, 10), d2(5, 11), d3;
+
+	cout << "Enter the value of object: " << endl;
+	cin >> d3;
+	cout << "First Distance: " << d1 << endl;
+	cout << "Second Distance: " << d2 << endl;
+	cout << "Third Distance: " << d3 << endl;
+}
