@@ -880,13 +880,13 @@ class Distance
 			inches = i;
 		}
 		
-		friend ostream &operator<<(ostream &output, const Distance& d)
+		friend ostream& operator<<(ostream &output, const Distance& d)
 		{
 			output << "F: " << d.feet << " I: " << d.inches;
 			return output;
 		}
 
-		friend istream &operator>>(istream &input, Distance& d)
+		friend istream& operator>>(istream &input, Distance& d)
 		{
 			input >> d.feet >> d.inches;
 			return input;
