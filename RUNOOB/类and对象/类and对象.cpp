@@ -894,14 +894,14 @@ class Distance
 
 		// 友元\非友元测试、成员\非成员测试、返回值、调用机制、参数、为什么都是引用、为什么不用括号
 
-		// 调换参数位置，d1 << cout;
+		// 调换参数位置，d1 << cout << endl;
 		//friend ostream& operator<<(const Distance& d, ostream &output)
 		//{
 		//	output << "F: " << d.feet << " I: " << d.inches;
 		//	return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
 		//}
 };
-
+ 
 void main()
 {
 	Distance d1(11, 10), d2(5, 11), d3;
@@ -911,5 +911,5 @@ void main()
 	cout << "First Distance: " << d1 << endl;
 	cout << "Second Distance: " << d2 << endl;
 	cout << "Third Distance: " << d3 << endl;
-	//cout.operator<<();
+	cout << 1 << endl;
 }
