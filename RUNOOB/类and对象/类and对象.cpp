@@ -883,14 +883,16 @@ class Distance
 		friend ostream& operator<<(ostream &output, const Distance& d)
 		{
 			output << "F: " << d.feet << " I: " << d.inches;
-			return output;
+			return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
 		}
 
 		friend istream& operator>>(istream &input, Distance& d)
 		{
 			input >> d.feet >> d.inches;
-			return input;
+			return input;	// 返回它自身，可实现在同一语句中连续多个>>输入
 		}
+
+		// 友元、返回值、调用机制、参数、为什么都是引用
 };
 
 void main()
