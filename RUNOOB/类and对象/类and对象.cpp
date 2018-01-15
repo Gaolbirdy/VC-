@@ -880,19 +880,19 @@ class Distance
 			inches = i;
 		}
 		
-		friend ostream& operator<<(ostream &output, const Distance& d)
+		friend ostream& operator<<(ostream& output, const Distance& d)
 		{
 			output << "F: " << d.feet << " I: " << d.inches;
 			return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
 		}
 
-		friend istream& operator>>(istream &input, Distance& d)
+		friend istream& operator>>(istream& input, Distance& d)
 		{
 			input >> d.feet >> d.inches;
 			return input;	// 返回它自身，可实现在同一语句中连续多个>>输入
 		}
 
-		// 友元\非友元测试、成员\非成员测试、返回值、调用机制、参数、为什么都是引用、为什么不用括号
+		// 返回值、为什么都是引用
 
 		// 调换参数位置，d1 << cout << endl;
 		//friend ostream& operator<<(const Distance& d, ostream &output)
@@ -900,7 +900,32 @@ class Distance
 		//	output << "F: " << d.feet << " I: " << d.inches;
 		//	return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
 		//}
+
+		// 非友元重载，成员重载
+		//ostream& operator<<(ostream &output)
+		//{
+		//	output << "F: " << this->feet << " I: " << this->inches;
+		//	return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
+		//}
+		//istream& operator>>(istream &input)
+		//{
+		//	input >> this->feet >> this->inches;
+		//	return input;	// 返回它自身，可实现在同一语句中连续多个>>输入
+		//}
+
 };
+
+//// 非成员重载
+//ostream& operator<<(ostream &output, const Distance& d)
+//{
+//	output << "F: " << d.feet << " I: " << d.inches;
+//	return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
+//}
+//istream& operator>>(istream &input, Distance& d)
+//{
+//	input >> d.feet >> d.inches;
+//	return input;	// 返回它自身，可实现在同一语句中连续多个>>输入
+//}
  
 void main()
 {
@@ -911,5 +936,11 @@ void main()
 	cout << "First Distance: " << d1 << endl;
 	cout << "Second Distance: " << d2 << endl;
 	cout << "Third Distance: " << d3 << endl;
-	cout << 1 << endl;
+	
+	// 非友元重载，成员重载
+	//d3 >> cin;
+	//d1.operator<<(cout) << endl;
+	//d2 << cout << endl;
+	//d3 << cout << endl;
+
 }
