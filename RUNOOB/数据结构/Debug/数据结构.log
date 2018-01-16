@@ -1,3 +1,27 @@
 ﻿cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
-  正在跳过...(未检测到相关更改)
+  stdafx.cpp
+d:\vc++\runoob\数据结构\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vc++\runoob\数据结构\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vc++\runoob\数据结构\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
   数据结构.cpp
+d:\vc++\runoob\数据结构\数据结构.cpp(38): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+d:\vc++\runoob\数据结构\数据结构.cpp(39): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+d:\vc++\runoob\数据结构\数据结构.cpp(40): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+d:\vc++\runoob\数据结构\数据结构.cpp(43): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+d:\vc++\runoob\数据结构\数据结构.cpp(44): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+d:\vc++\runoob\数据结构\数据结构.cpp(45): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+d:\vc++\runoob\数据结构\数据结构.cpp(36): warning C4101: “z”: 未引用的局部变量
+d:\vc++\runoob\数据结构\数据结构.cpp(36): warning C4101: “y”: 未引用的局部变量
+d:\vc++\runoob\数据结构\数据结构.cpp(36): warning C4101: “x”: 未引用的局部变量
+d:\vc++\runoob\数据结构\数据结构.cpp(34): warning C4101: “book3”: 未引用的局部变量
+d:\vc++\runoob\数据结构\数据结构.cpp(34): warning C4101: “book4”: 未引用的局部变量
+  LINK : 没有找到 D:\VC++\RUNOOB\Debug\数据结构.exe 或上一个增量链接没有生成它；正在执行完全链接
+  数据结构.vcxproj -> D:\VC++\RUNOOB\Debug\数据结构.exe
+  数据结构.vcxproj -> D:\VC++\RUNOOB\Debug\数据结构.pdb (Partial PDB)

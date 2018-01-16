@@ -1,3 +1,8 @@
-﻿  循环.cpp
-  循环.vcxproj -> D:\VCPP\RUNOOB\Debug\循环.exe
-  循环.vcxproj -> D:\VCPP\RUNOOB\Debug\循环.pdb (Partial PDB)
+﻿  stdafx.cpp
+d:\vc++\runoob\循环\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vc++\runoob\循环\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vc++\runoob\循环\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  循环.cpp
+  LINK : 没有找到 D:\VC++\RUNOOB\Debug\循环.exe 或上一个增量链接没有生成它；正在执行完全链接
+  循环.vcxproj -> D:\VC++\RUNOOB\Debug\循环.exe
+  循环.vcxproj -> D:\VC++\RUNOOB\Debug\循环.pdb (Partial PDB)

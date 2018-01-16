@@ -892,7 +892,7 @@ class Distance
 			return input;	// 返回它自身，可实现在同一语句中连续多个>>输入
 		}
 
-		// 返回值、为什么都是引用
+		// 为什么都是引用
 
 		// 调换参数位置，d1 << cout << endl;
 		//friend ostream& operator<<(const Distance& d, ostream &output)
