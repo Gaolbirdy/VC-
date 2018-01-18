@@ -861,58 +861,56 @@ using namespace std;
 //	}
 //}
 
-class Distance
-{
-	private:
-		int feet;
-		int inches;
-
-	public:
-		Distance()
-		{
-			feet = 0;
-			inches = 0;
-		}
-		Distance(int f, int i)
-		{
-			feet = f;
-			inches = i;
-		}
-		
-		friend ostream& operator<<(ostream& output, const Distance& d)
-		{
-			output << "F: " << d.feet << " I: " << d.inches;
-			return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
-		}
-
-		friend istream& operator>>(istream& input, Distance& d)
-		{
-			input >> d.feet >> d.inches;
-			return input;	// 返回它自身，可实现在同一语句中连续多个>>输入
-		}
-
-		// 为什么都是引用
-
-		// 调换参数位置，d1 << cout << endl;
-		//friend ostream& operator<<(const Distance& d, ostream &output)
-		//{
-		//	output << "F: " << d.feet << " I: " << d.inches;
-		//	return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
-		//}
-
-		// 非友元重载，成员重载
-		//ostream& operator<<(ostream &output)
-		//{
-		//	output << "F: " << this->feet << " I: " << this->inches;
-		//	return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
-		//}
-		//istream& operator>>(istream &input)
-		//{
-		//	input >> this->feet >> this->inches;
-		//	return input;	// 返回它自身，可实现在同一语句中连续多个>>输入
-		//}
-
-};
+//class Distance
+//{
+//	private:
+//		int feet;
+//		int inches;
+//
+//	public:
+//		Distance()
+//		{
+//			feet = 0;
+//			inches = 0;
+//		}
+//		Distance(int f, int i)
+//		{
+//			feet = f;
+//			inches = i;
+//		}
+//		
+//		friend ostream& operator<<(ostream& output, const Distance& d)
+//		{
+//			output << "F: " << d.feet << " I: " << d.inches;
+//			return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
+//		}
+//
+//		friend istream& operator>>(istream& input, Distance& d)
+//		{
+//			input >> d.feet >> d.inches;
+//			return input;	// 返回它自身，可实现在同一语句中连续多个>>输入
+//		}
+//
+//		// 调换参数位置，d1 << cout << endl;
+//		//friend ostream& operator<<(const Distance& d, ostream &output)
+//		//{
+//		//	output << "F: " << d.feet << " I: " << d.inches;
+//		//	return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
+//		//}
+//
+//		// 非友元重载，成员重载
+//		//ostream& operator<<(ostream &output)
+//		//{
+//		//	output << "F: " << this->feet << " I: " << this->inches;
+//		//	return output;	// 返回它自身，可实现在同一语句中连续多个<<输出
+//		//}
+//		//istream& operator>>(istream &input)
+//		//{
+//		//	input >> this->feet >> this->inches;
+//		//	return input;	// 返回它自身，可实现在同一语句中连续多个>>输入
+//		//}
+//
+//};
 
 //// 非成员重载
 //ostream& operator<<(ostream &output, const Distance& d)
@@ -926,20 +924,124 @@ class Distance
 //	return input;	// 返回它自身，可实现在同一语句中连续多个>>输入
 //}
  
+//void main()
+//{
+//	Distance d1(11, 10), d2(5, 11), d3;
+//
+//	cout << "Enter the value of object: " << endl;
+//	cin >> d3;
+//	cout << "First Distance: " << d1 << endl;
+//	cout << "Second Distance: " << d2 << endl;
+//	cout << "Third Distance: " << d3 << endl;
+//	
+//	// 非友元重载，成员重载
+//	//d3 >> cin;
+//	//d1.operator<<(cout) << endl;
+//	//d2 << cout << endl;
+//	//d3 << cout << endl;
+//
+//}
+
+//class Time
+//{
+//	private:
+//		int hours;
+//		int minutes;
+//
+//	public:
+//		// 所需的构造函数
+//		Time()
+//		{
+//			hours = 0;
+//			minutes = 0;
+//		}
+//		Time(int h, int m)
+//		{
+//			hours = h;
+//			minutes = m;
+//		}
+//
+//		// 显示时间的方法
+//		void displayTime()
+//		{
+//			cout << "H: " << hours << " M: " << minutes << endl;
+//		}
+//
+//		// 重载前缀递增运算符++
+//		Time operator++()
+//		{
+//			++minutes;	// 对象加1
+//			if (minutes >= 60)
+//			{
+//				++hours;
+//				minutes -= 60;
+//			}
+//			return Time(hours, minutes);
+//		}
+//
+//		// 重载后缀递增运算符++
+//		Time operator++(int)
+//		{
+//			// 保存原始值
+//			Time T(hours, minutes);
+//			++minutes;	// 对象加1
+//			if (minutes >= 60)
+//			{
+//				++hours;
+//				minutes -= 60;
+//			}
+//			// 返回旧的原始值
+//			return T;
+//		}
+//};
+//
+//void main()
+//{
+//	Time T1(11, 59), T2(10, 40);
+//
+//	++T1;	// T1加1
+//	T1.displayTime();	// 显示T1
+//	++T1;	// T1再加1
+//	T1.displayTime();	// 显示T1
+//
+//	T2++;	// T2加1
+//	T2.displayTime();	// 显示T2
+//	T2++;	// T2再加1
+//	T2.displayTime();	// 显示T2
+//
+//}
+
+class Distance
+{
+	private:
+		int feet;
+		int inches;
+	
+	public:
+		Distance()
+		{
+			feet = 0;
+			inches = 0;
+		}
+		Distance(int f, int i)
+		{
+			feet = f;
+			inches = i;
+		}
+
+		void operator=(const Distance &D)
+		{
+			feet = D.feet;
+			inches = D.inches;
+		}
+
+		void displayDistance()
+		{
+			cout << "F: " << feet << " I: " << inches << endl;
+		}
+};
+
 void main()
 {
-	Distance d1(11, 10), d2(5, 11), d3;
-
-	cout << "Enter the value of object: " << endl;
-	cin >> d3;
-	cout << "First Distance: " << d1 << endl;
-	cout << "Second Distance: " << d2 << endl;
-	cout << "Third Distance: " << d3 << endl;
-	
-	// 非友元重载，成员重载
-	//d3 >> cin;
-	//d1.operator<<(cout) << endl;
-	//d2 << cout << endl;
-	//d3 << cout << endl;
 
 }
