@@ -15,7 +15,6 @@ using namespace std;
 //		double height;
 //		
 //		double getVolume(void)
-//		{
 //			return length * breadth * height;
 //		}
 //
