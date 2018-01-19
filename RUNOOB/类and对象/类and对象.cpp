@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -1011,37 +1012,197 @@ using namespace std;
 //
 //}
 
-class Distance
+//class Distance
+//{
+//	private:
+//		int feet;
+//		int inches;
+//	
+//	public:
+//		// 所需的构造函数
+//		Distance()
+//		{
+//			feet = 0;
+//			inches = 0;
+//		}
+//		Distance(int f, int i)
+//		{
+//			feet = f;
+//			inches = i;
+//		}
+//
+//		void operator=(const Distance &D)
+//		{
+//			feet = D.feet;
+//			inches = D.inches;
+//		}
+//
+//		// 显示距离的方法
+//		void displayDistance()
+//		{
+//			cout << "F: " << feet << " I: " << inches << endl;
+//		}
+//};
+//
+//void main()
+//{
+//	Distance D1(11, 10), D2(5, 11);
+//
+//	cout << "First Distance : ";
+//	D1.displayDistance();
+//	cout << "Second Distance : ";
+//	D2.displayDistance();
+//
+//	// 使用赋值运算符
+//	D1 = D2;
+//	cout << "First Distance : ";
+//	D1.displayDistance();
+//
+//	Distance D3 = D2;
+//	cout << "Third Distance : ";
+//	D3.displayDistance();
+//}
+
+//class Distance
+//{
+//	private:
+//		int feet;
+//		int inches;
+//	
+//	public:
+//		// 所需的构造函数
+//		Distance()
+//		{
+//			feet = 0;
+//			inches = 0;
+//		}
+//		Distance(int f, int i)
+//		{
+//			feet = f;
+//			inches = i;
+//		}
+//
+//		// 重载函数调用运算符
+//		Distance operator()(int a, int b, int c)
+//		{
+//			Distance D;
+//			// 进行随机计算
+//			D.feet = a + c + 10;
+//			D.inches = b + c + 100;
+//			return D;
+//		}
+//
+//		// 显示距离的方法
+//		void displayDistance()
+//		{
+//			cout << "F: " << feet << " I: " << inches << endl;
+//		}
+//
+//		Distance change(int a, int b, int c)
+//		{
+//			Distance D;
+//			D.feet = a + c + 10;
+//			D.inches = b + c + 100;
+//			return D;
+//		}
+//};
+//
+//void main()
+//{
+//	Distance D1(11, 10), D2, D3;
+//
+//	cout << "First Distance : ";
+//	D1.displayDistance();
+//
+//	D2 = D1(10, 10, 10);	// invoke operator()
+//	cout << "Second Distance : ";
+//	D2.displayDistance();
+//
+//	D3 = D1.change(10, 10, 10);
+//	cout << "Third Distance : ";
+//	D3.displayDistance();
+//}
+
+//const int SIZE = 10;
+//class safeArray
+//{
+//	public:
+//		int arr[SIZE];
+//
+//	public:
+//		safeArray()
+//		{
+//			register int i;
+//			for (i = 0; i < SIZE; i++)
+//			{
+//				arr[i] = i;
+//			}
+//		}
+//
+//		int& operator[](int i)
+//		{
+//			if (i > SIZE)
+//			{
+//				cout << "索引超过最大值" << endl;
+//				// 返回第一个元素
+//				return arr[0];
+//			}
+//			return arr[i];
+//		}
+//};
+//
+//void main()
+//{
+//	safeArray A;
+//	cout << "A[2] 的值为 : " << A[2] << endl;
+//	cout << "A[5] 的值为 : " << A[5] << endl;
+//	cout << "A[12] 的值为 : " << A[12] << endl;
+//}
+
+
+// 假设一个实际的类
+class Obj
 {
-	private:
-		int feet;
-		int inches;
-	
+	static int i, j;
+
 	public:
-		Distance()
-		{
-			feet = 0;
-			inches = 0;
+		void f() const 
+		{ 
+			cout << i++ << endl; 
 		}
-		Distance(int f, int i)
+		void g() const
 		{
-			feet = f;
-			inches = i;
-		}
-
-		void operator=(const Distance &D)
-		{
-			feet = D.feet;
-			inches = D.inches;
-		}
-
-		void displayDistance()
-		{
-			cout << "F: " << feet << " I: " << inches << endl;
+			cout << j++ << endl;
 		}
 };
 
-void main()
-{
+// 静态成员定义
+int Obj::i = 10;
+int Obj::j = 12;
 
-}
+// 为上面的类实现一个容器
+class ObjContainer
+{
+	vector<Obj*> a;
+
+	public:
+		void add(Obj* obj)
+		{
+			a.push_back(obj);	// 调用向量的标准方法
+		}
+		friend class SmartPointer;
+};
+
+// 实现智能指针，用于访问类Obj的成员
+class SmartPointer
+{
+	ObjContainer oc;
+	int index;
+
+	public:
+		SmartPointer(ObjContainer& objc)
+		{
+			oc = objc;
+			index = 0;
+		}
+};
