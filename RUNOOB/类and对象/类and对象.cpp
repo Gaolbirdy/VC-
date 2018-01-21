@@ -1251,3 +1251,166 @@ using namespace std;
 //		cout << endl;
 //	} while (sp++);
 //}
+
+//class Shape
+//{
+//	protected:
+//		int width, height;
+//	
+//	public:
+//		Shape(int a = 0, int b = 0)
+//		{
+//			width = a;
+//			height = b;
+//		}
+//
+//		/*virtual int area()
+//		{
+//			cout << "Parent class area :" << endl;
+//			return 0;
+//		}*/
+//
+//		// pure virtual function
+//		virtual int area() = 0;
+//};
+//
+//class Rectangle : public Shape
+//{
+//	public:
+//		Rectangle(int a = 0, int b = 0) : Shape(a, b) {}
+//
+//		int area()
+//		{
+//			cout << "Rectangle class area :" << endl;
+//			return (width * height);
+//		}
+//};
+//
+//class Triangle : public Shape
+//{
+//	public:
+//		Triangle(int a = 0, int b = 0) : Shape(a, b) {}
+//
+//		int area()
+//		{
+//			cout << "Triangle class area :" << endl;
+//			return (width * height / 2);
+//		}
+//};
+//
+//void main()
+//{
+//	Shape* shape;
+//	//Shape s;
+//	Rectangle rec(10, 7);
+//	Triangle tri(10, 5);
+//
+//	// 存储矩形的地址
+//	shape = &rec;
+//	// 调用矩形的求面积函数 area
+//	shape->area();
+//	
+//	//s = rec;
+//	//s.area();
+//
+//	// 存储三角形的地址
+//	shape = &tri;
+//	shape->area();
+//
+//	//s = tri;
+//	//s.area();
+//}
+
+//class Adder
+//{
+//	public:
+//		// 构造函数
+//		Adder(int i = 0)
+//		{
+//			total = i;
+//		}
+//
+//		// 对外的接口
+//		void addNum(int number)
+//		{
+//			total += number;
+//		}
+//
+//		// 对外的接口
+//		int getTotal()
+//		{
+//			return total;
+//		}
+//
+//	private:
+//		// 对外隐藏的数据
+//		int total;
+//};
+//
+//void main()
+//{
+//	Adder a;
+//
+//	a.addNum(10);
+//	a.addNum(20);
+//	a.addNum(30);
+//
+//	cout << "Total " << a.getTotal() << endl;
+//}
+
+// 基类
+class Shape
+{
+	public:
+		// 提供接口框架的纯虚函数
+		virtual int getArea() = 0;
+
+		void setWidth(int w)
+		{
+			width = w;
+		}
+
+		void setHeight(int h)
+		{
+			height = h;
+		}
+	
+	protected:
+		int width;
+		int height;
+};
+
+// 派生类
+class Rectangle : public Shape
+{
+	public:
+		int getArea()
+		{
+			return (width * height);
+		}
+};
+
+class Triangle : public Shape
+{
+	public:
+		int getArea()
+		{
+			return (width * height) / 2;
+		}
+};
+
+void main()
+{
+	Rectangle Rect;
+	Triangle tri;
+
+	Rect.setWidth(5);
+	Rect.setHeight(7);
+	// 输出对象的面积
+	cout << "Total Rectangle area : " << Rect.getArea() << endl;
+
+	tri.setWidth(5);
+	tri.setHeight(7);
+	// 输出对象的面积
+	cout << "Total Triangle area : " << tri.getArea() << endl;
+}

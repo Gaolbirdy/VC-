@@ -1,0 +1,4 @@
+﻿  命名空间.cpp
+d:\vc++\runoob\命名空间\命名空间.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  命名空间.vcxproj -> D:\VC++\RUNOOB\Debug\命名空间.exe
+  命名空间.vcxproj -> D:\VC++\RUNOOB\Debug\命名空间.pdb (Partial PDB)
