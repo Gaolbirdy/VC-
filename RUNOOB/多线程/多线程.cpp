@@ -4,6 +4,9 @@
 #include "stdafx.h"
 #include <iostream>
 #include <pthread.h>
+#include <cstdlib>
+#include <unistd.h>
+#include <Windows.h>
 //#pragma comment(lib, "pthreadVC2.lib")  
 
 using namespace std;
@@ -37,32 +40,97 @@ using namespace std;
 //	return 0;
 //}
 
-void* PrintHello(void* threadid)
+//void* PrintHello(void* threadid)
+//{
+//	// 对传入的参数进行强制类型转换，由无类型指针变为整形数指针，然后再读取
+//	int tid = *((int*)threadid);
+//	cout << "Hello Runoob! 线程 ID, " << tid << endl;
+//	pthread_exit(NULL);
+//}
+//
+//int main()
+//{
+//	pthread_t threads[NUM_THREADS];
+//	int indexes[NUM_THREADS];	// 用数组来保存i的值
+//	int rc;
+//	int i;
+//	for (i = 0; i < NUM_THREADS; i++)
+//	{
+//		cout << "main() : 创建线程， " << i << endl;
+//		indexes[i] = i;	// 先保存i的值
+//		// 传入的时候必须强制转换为void* 类型，即无类型指针
+//		rc = pthread_create(&threads[i], NULL, PrintHello, (void*)&(indexes[i]));
+//		if (rc)
+//		{
+//			cout << "Error:无法创建线程， " << rc << endl;
+//			exit(-1);
+//		}
+//	}
+//
+//	pthread_exit(NULL);
+//}
+
+//struct thread_data
+//{
+//	int thread_id;
+//	char* message;
+//};
+//
+//void* PrintHello(void* threadarg)
+//{
+//	struct thread_data* my_data;
+//	my_data = (struct thread_data*)threadarg;
+//	cout << "Thread ID : " << my_data->thread_id;
+//	cout << "Message : " << my_data->message << endl;
+//
+//	pthread_exit(NULL);
+//}
+//
+//void main()
+//{
+//	pthread_t threads[NUM_THREADS];
+//	struct thread_data td[NUM_THREADS];
+//	int rc;
+//	int i;
+//
+//	for (i = 0; i < NUM_THREADS; i++)
+//	{
+//		cout << "main() : creating thread, " << i << endl;
+//		td[i].thread_id = i;
+//		td[i].message = (char*)"This is message";
+//		rc = pthread_create(&threads[i], NULL, PrintHello, (void*)&td[i]);
+//		if (rc)
+//		{
+//			cout << "Error:unable to create thread," << rc << endl;
+//			exit(-1);
+//		}
+//	}
+//	pthread_exit(NULL);
+//}
+
+void* wait(void* t)
 {
-	// 对传入的参数进行强制类型转换，由无类型指针变为整形数指针，然后再读取
-	int tid = *((int*)threadid);
-	cout << "Hello Runoob! 线程 ID, " << tid << endl;
+	int i;
+	long tid;
+
+	tid = (long)t;
+	//tid = *((long*)t);
+
+	sleep(1);
+	cout << "Sleeping in thread " << endl;
+	cout << "Thread with id : " << tid << " ...exiting" << endl;
 	pthread_exit(NULL);
 }
 
-int main()
+void main()
 {
-	pthread_t threads[NUM_THREADS];
-	int indexes[NUM_THREADS];	// 用数组来保存i的值
 	int rc;
 	int i;
-	for (i = 0; i < NUM_THREADS; i++)
-	{
-		cout << "main() : 创建线程， " << i << endl;
-		indexes[i] = i;	// 先保存i的值
-		// 传入的时候必须强制转换为void* 类型，即无类型指针
-		rc = pthread_create(&threads[i], NULL, PrintHello, (void*)&(indexes[i]));
-		if (rc)
-		{
-			cout << "Error:无法创建线程， " << rc << endl;
-			exit(-1);
-		}
-	}
+	pthread_t threads[NUM_THREADS];
+	pthread_attr_t attr;
+	void* status;
 
-	pthread_exit(NULL);
+	// 初始化并设置线程为可连接的（joinable）
+	pthread_attr_init(&attr);
+
 }
