@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+d:\vcpp\runoob\多线程\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vcpp\runoob\多线程\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\vcpp\runoob\多线程\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  多线程.cpp
+d:\vcpp\runoob\多线程\多线程.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\include\pthread.h(307): error C2011: “timespec”:“struct”类型重定义
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\time.h(39): note: 参见“timespec”的声明

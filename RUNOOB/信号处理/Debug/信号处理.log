@@ -1,0 +1,4 @@
+﻿  信号处理.cpp
+d:\vcpp\runoob\信号处理\信号处理.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  信号处理.vcxproj -> D:\VCPP\RUNOOB\Debug\信号处理.exe
+  信号处理.vcxproj -> D:\VCPP\RUNOOB\Debug\信号处理.pdb (Partial PDB)
