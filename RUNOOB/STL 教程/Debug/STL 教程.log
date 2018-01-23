@@ -1,7 +1,3 @@
-﻿  stdafx.cpp
-d:\vcpp\runoob\stl 教程\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\vcpp\runoob\stl 教程\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\vcpp\runoob\stl 教程\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  STL教程.cpp
+﻿  STL教程.cpp
   STL 教程.vcxproj -> D:\VCPP\RUNOOB\Debug\STL 教程.exe
   STL 教程.vcxproj -> D:\VCPP\RUNOOB\Debug\STL 教程.pdb (Partial PDB)

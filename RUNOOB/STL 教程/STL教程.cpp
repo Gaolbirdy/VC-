@@ -13,7 +13,7 @@ int main()
 	vector<int> vec;
 	int i;
 
-	// 显示 vec 的原始大小
+	// 显示vec 的原始大小
 	cout << "vector size = " << vec.size() << endl;
 
 	// 推入 5 个值到向量中
